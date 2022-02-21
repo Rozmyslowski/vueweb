@@ -10,7 +10,7 @@
         <router-link to="/">Strona główna</router-link>
       </div>
       <div class="col-2 ">
-        <router-link to="/about">Oferta</router-link>
+        <router-link to="/oferta">Oferta</router-link>
       </div>
       <div class="col-2">
         <router-link to="/contact">Kontakt</router-link>

@@ -3,7 +3,7 @@
         <div class="hero-img">
           <div class="hero-shadow"></div>
           <div class="hero-text">
-            <h1> Witajcie w NXOBrand</h1>
+            <h1> Strona naszego sklepu NXOBrand</h1>
           </div>
         </div>
     </header>
