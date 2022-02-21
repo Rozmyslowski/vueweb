@@ -1,31 +1,75 @@
 <template>
+
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> | 
-    <router-link to="/contact">Contact</router-link>
+    <div class="container">
+    <div class="row">
+      <div class="col-6 title ">
+        <p>NXOBrand</p>
+      </div>
+      <div class="col-2 ">
+        <router-link to="/">Strona główna</router-link>
+      </div>
+      <div class="col-2 ">
+        <router-link to="/about">Oferta</router-link>
+      </div>
+      <div class="col-2">
+        <router-link to="/contact">Kontakt</router-link>
+      </div>
+    </div>
+  </div>
   </nav>
+
+
+
   <router-view/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  @import 'E:\vueweb\vueweb\node_modules\bootstrap\dist\css\bootstrap.css';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-nav {
+html{
+  font-size: 62.5%;
+
+}
+
+body{
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* nav */
+
+nav{
+  width: 100%;
+  background-color: #333;
+  height: 10vh;
+}
+
+.container{
   padding: 30px;
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  line-height: 200%;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.title{
+  font-size:3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
 </style>
