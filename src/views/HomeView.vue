@@ -25,7 +25,7 @@ header {
 
 header .hero-img {
   position: relative;
-  background-image: url(E:\vueweb\vueweb\src\components\img\telework.jpg);
+  background-image: url(../components/img/telework.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

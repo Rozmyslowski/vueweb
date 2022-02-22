@@ -25,7 +25,7 @@
 </template>
 
 <style>
-  @import 'E:\vueweb\vueweb\node_modules\bootstrap\dist\css\bootstrap.css';
+  /* @import 'C:\Users\NXO\vueweb\node_modules\bootstrap\dist\css\bootstrap.css'; */
 
 *{
   box-sizing: border-box;
