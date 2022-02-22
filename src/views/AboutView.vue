@@ -1,39 +1,65 @@
 <template>
-  <main>
-    <div class="offer-box">
-       <div id="app">
-          <p>Ilość miesięcy <input v-model="x"></p>
-          <p>Stawka u nas lub na allegro <input v-model="y"></p>
-          
-          <p> <span v-text="result"></span></p>
-        </div>
-    </div>
-  </main>
+	<main>
+		<input type="number" v-model.number="a" placeholder="Podaj ilość aukcji w miesiącu"/>
+
+			<div class="text-price">
+				<p>NXOBrand {{a * 0.25}} zł</p>
+			</div>
+      
+			<div class="text-price">
+				<p>Konkurencja {{a * 0.5}} zł</p>
+			</div>
+        <p>Miesięcznie zaoszczędzisz: {{ (a * 0.5) - (a * 0.25) }}zł</p>
+        <p>Rocznie zaoszczędzisz: {{ ((a * 0.5) - (a * 0.25) ) * 12}}zł </p>
+
+	</main>
 </template>
 
-
 <script>
-
-
+export default{
+	name: 'OfferVue',
+	data() {
+		return {
+			a: null,
+		}
+	} 
+}
 </script>
+
 
 <style>
 
-main{
-  height: 90vh;
+body{
   background-color: #222;
-  color: #fff;
+}
+main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+  width: 500px;
+}
+main input{
+  width: 500px;
+}
+
+.calculator{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   font-size: 2rem;
 }
 
-.offer-box{
-   display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		text-align: center;
+main .text-pirce{
+  font-size: 5rem;
+  text-align: center;
+  padding: 2em;
+
 }
+
+
 
 </style>
 
